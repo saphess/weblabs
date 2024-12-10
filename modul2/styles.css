@@ -1,0 +1,223 @@
+@font-face {
+  font-family: Branding SF;
+  src: url("Design-Studio-PSD-Template/FontsFree-Net-7ef68227-7af5-4ef7-b1fc-52d725a3c769.ttf");
+}
+
+@font-face {
+  font-family: AdobeGothicStd-Bold;
+  src: url("Design-Studio-PSD-Template/webfonts_AdobeGothicStd-Bold/AdobeGothicStd-Bold.ttf.woff");
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6d6d6;
+    color: #333;
+  }
+  
+  .header {
+    /* background-color: #333; */
+    background-image: url("Design-Studio-PSD-Template/header.jpg");
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    align-items: center;
+  }
+  
+  .header .logo {
+    margin-left: 150px;
+  }
+
+  .header .logo .naming {
+    line-height: 1;
+    color: rgba(16, 16, 16);
+    font-family: AdobeGothicStd-Bold;
+  }
+
+  .header .logo p {
+    margin: 0;
+    font-size: 29px;
+  }
+  .header .logo p2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .nav {
+    padding: 5px 150px 20px 0px;
+  }
+
+  .nav ul {
+    list-style: none;
+    margin: auto;
+    display: flex;
+    gap: 1em;
+    
+  }
+  
+  .nav ul li a {
+    color: rgb(127, 127, 127);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: AdobeGothicStd-Bold;
+    transition: all 0.3s ;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .nav ul li a:hover {
+    background-color: rgba(16, 16, 16, 40%);
+    box-shadow: -10px 0 0 rgba(16, 16, 16, 40%), 10px 0 0 rgba(16, 16, 16, 40%);
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+  }
+
+  .home {
+    display: inline;
+    background-color: rgba(16, 16, 16, 40%);
+    box-shadow: -20px 0 0 rgba(16, 16, 16, 40%), 20px 0 0 rgba(16, 16, 16, 40%);
+    padding: 10px 0;
+    border-radius: 10px;
+    color: rgb(220, 220, 220);
+  }
+  
+  .main {
+    padding: 2em;
+    /* position: relative */
+  }
+  
+  .intro {
+    background-image: url("Design-Studio-PSD-Template/fon.png");
+    background-size: cover;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+
+    height: 500px;
+
+    background-color: #e1e7f0;
+    /* text-align: center; */
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+
+    
+  }
+
+  .intro-content {
+    display: flex; /* Расположить элементы в строку */
+    align-items: center; /* Вертикальное выравнивание */
+    gap: 1rem; /* Промежуток между элементами (удобнее, чем margin) */
+    margin: 0; /* Убираем внешние отступы у контейнера */
+    padding: 0; /* Убираем внутренние отступы */
+  }
+  
+  .intro h2 {
+    line-height: 1;
+    text-align: left;
+    font-size: 55px;
+    margin: 0 auto;
+    color: rgba(16, 16, 16);
+    font-family: AdobeGothicStd-Bold;
+    
+  }
+
+  .right-section img{
+    width: 350px;
+    height: 300px;
+    /* box-shadow: ;  */
+    
+  }
+  
+  .more-projects {
+    
+    padding: 0.5em 1.5em;
+    background-color: #0073e6;
+    background-image: url("Design-Studio-PSD-Template/button.png");
+    color: white;
+    border: none;
+    border-radius: 112px;
+    cursor: pointer;
+
+    position: relative;
+    right: 100px;
+
+    font-size: 10px;
+  }
+
+  .more-projects-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(220, 220, 220);
+  }
+  
+  .intro-text {
+    flex: 1; /* Текст занимает всё оставшееся пространство */
+    color: rgb(220, 220, 220);
+    font-family: AdobeGothicStd-Bold;
+  }
+
+  .intro .text1 {
+    margin-bottom: 1em;
+    font-size: 18px;
+    color: rgba(16, 16, 16);
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* position: relative; */
+    /* left: 100px; */
+  }
+  
+  .feature {
+    /* flex: 1; */
+    /* background-color: white; */
+    /* padding: 1em; */
+    /* border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    color: rgba(16, 16, 16);
+    font-family: AdobeGothicStd-Bold;
+
+    max-width: 500px;
+  }
+  
+  .feature h3 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .footer {
+    background-image: url("Design-Studio-PSD-Template/footer.jpg");
+    color: rgba(114, 114, 114);
+    padding: 1.5em;
+    display: flex; /* Используем Flexbox для расположения текста и ссылки в одной строке */
+    justify-content: space-between; /* Размещаем текст и ссылку по краям */
+    align-items: center; /* Центрируем по вертикали */
+  }
+  .footer p {
+    margin-left: 150px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center; /* Центрируем по вертикали */
+    gap: 0.5em; /* Отступ между ссылкой и картинкой */
+    margin-right: 150px;
+  }
+  
+  .footer a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    font-weight: bold;
+
+    background-color: rgba(16, 16, 16, 40%);
+    box-shadow: -20px 0 0 rgba(16, 16, 16, 40%), 20px 0 0 rgba(16, 16, 16, 40%);
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  
