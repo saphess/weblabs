@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    table {
+        border-collapse: collapse;
+        margin-left: 10%;
+    }
+    td {
+        padding: 10px;
+        font-family: Montserrat;
+    }
+
+    .name {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+</style>
+<body style="font-size: 20px;">
+    <table border="1">
+        <tr>
+            <td class="name">Удаление всех HTML тегов</td>
+            <td>$pattern = "/<[^>]+>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех тегов &ltb&gt (жирный текст)</td>
+            <td>$pattern = "/&ltb>(.*?)&lt\/b>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех ссылок</td>
+            <td>$pattern = "/&lta\s+href=['\"](.*?)['\"][^>]*>(.*?)<\/a>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех тегов &ltp>&lt/p></td>
+            <td>$pattern = "/&ltp>(.*?)<\/p>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех тегов &lth1>&lt/h1></td>
+            <td>$pattern = "/&lth1>(.*?)<\/h1>/";</td>
+        </tr>
+    </table>
+</body>
+</html>
