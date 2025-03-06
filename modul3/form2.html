@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    .form {
+        width: 800px;
+        margin-left: 20%;
+        margin-right: 20%;
+        /* padding: 10px; */
+        text-align: center;
+
+        font-family: Montserrat;
+
+        background-color: rgb(242, 225, 206);
+    }
+    form {
+        font-size: 18px;
+        text-align: left;
+    }
+    button {
+        text-align: center;
+        height: 50px;
+        width: 200px;
+        margin-left: 300px;
+        font-size: 22px;
+    }
+    body {
+        background-color: rgb(255, 206, 202);
+    }
+</style>
+<html>
+    <body>
+        <div class="form">
+            <h1>Тест на алкоголизм</h1>
+            <form action="result2.php" method="post">
+                <h1>Вопрос 1</h1>
+                <label>После ссоры в семье, после выговора 
+                    начальника ищете ли Вы успокоение в 
+                    спиртных напитках?</label>
+                <br>
+                <input type="radio" name="q1" value="1">Да
+                <input type="radio" name="q1" value="0">Нет
+                <br>
+                <h1>Вопрос 2</h1>
+                <label>Замечаете ли Вы, что стали в последнее время
+                     пить больше ?</label>
+                <br>
+                <input type="radio" name="q2" value="1">Да
+                <input type="radio" name="q2" value="0">Нет
+                <br>
+                <h1>Вопрос 3</h1>
+                <label>Случалось ли Вам, 
+                    проснувшись утром после выпивки, не помнить, 
+                    что было вчера?</label>
+                <br>
+                <input type="radio" name="q3" value="1">Да
+                <input type="radio" name="q3" value="0">Нет
+                <br>
+                <h1>Вопрос 4</h1>
+                <label>Когда пьете в компании, не стараетесь 
+                    ли Вы незаметно выпить побольше ?</label>
+                <br>
+                <input type="radio" name="q4" value="1">Да
+                <input type="radio" name="q4" value="0">Нет
+                <br>
+                <h1>Вопрос 5</h1>
+                <label>Случались ли в вашей жизни ситуации, 
+                    когда без алкоголя Вы чувствовали себя неуверенно ?</label>
+                <br>
+                <input type="radio" name="q5" value="1">Да
+                <input type="radio" name="q5" value="0">Нет
+                <br>
+                <h1>Вопрос 6</h1>
+                <label>Стремитесь ли Вы опорожнить первую рюмку 
+                    быстрее, чем делали это раньше ?</label>
+                <br>
+                <input type="radio" name="q6" value="1">Да
+                <input type="radio" name="q6" value="0">Нет
+                <br>
+                <h1>Вопрос 7</h1>
+                <label>Приходите ли Вы в негодование, 
+                    когда близкие осуждают ваши выпивки?</label>
+                <br>
+                <input type="radio" name="q7" value="1">Да
+                <input type="radio" name="q7" value="0">Нет
+                <br>
+                <h1>Вопрос 8</h1>
+                <label>Замечаете ли Вы у себя провалы памяти ?</label>
+                <br>
+                <input type="radio" name="q8" value="1">Да
+                <input type="radio" name="q8" value="0">Нет
+                <br>
+                <h1>Вопрос 9</h1>
+                <label>Всегда ли у Вас находятся причины, 
+                    оправдывающие выпивку ?</label>
+                <br>
+                <input type="radio" name="q9" value="1">Да
+                <input type="radio" name="q9" value="0">Нет
+                <br>
+                <h1>Вопрос 10</h1>
+                <label>Часто ли Вы жалеете о том, 
+                    что сделали или сказали в пьяном виде ?
+                </label>
+                <br>
+                <input type="radio" name="q10" value="1">Да
+                <input type="radio" name="q10" value="0">Нет
+                <br>
+                <h1>Вопрос 11</h1>
+                <label>Возникает ли у Вас желание контролировать 
+                    количество потребляемых спиртных напитков ?</label>
+                <br>
+                <input type="radio" name="q11" value="1">Да
+                <input type="radio" name="q11" value="0">Нет
+                <br>
+                <h1>Вопрос 12</h1>
+                <label>Часто ли Вы нарушаете данное себе обещание
+                     - пить меньше или вообще бросить пить ?</label>
+                <br>
+                <input type="radio" name="q12" value="1">Да
+                <input type="radio" name="q12" value="0">Нет
+                <br>
+                <h1>Вопрос 13</h1>
+                <label>Пытались ли Вы бросить пить ?</label>
+                <br>
+                <input type="radio" name="q13" value="1">Да
+                <input type="radio" name="q13" value="0">Нет
+                <br>
+                <h1>Вопрос 14</h1>
+                <label>Стремитесь ли Вы к тому, чтобы ваша семья
+                     и друзья не видели Вас пьяным ?</label>
+                <br>
+                <input type="radio" name="q14" value="1">Да
+                <input type="radio" name="q14" value="0">Нет
+                <br>
+                <h1>Вопрос 15</h1>
+                <label>Замечали ли Вы, что из-за активного потребления спиртного у 
+                    Вас появились финансовые затруднения и проблемы 
+                    на работе ?</label>
+                <br>
+                <input type="radio" name="q15" value="1">Да
+                <input type="radio" name="q15" value="0">Нет
+                <br>
+                <h1>Вопрос 16</h1>
+                <label>Увеличилось ли число людей, 
+                    которые, как Вам кажется, несправедливо к Вам 
+                    относятся ?</label>
+                <br>
+                <input type="radio" name="q16" value="1">Да
+                <input type="radio" name="q16" value="0">Нет
+                <br>
+                <h1>Вопрос 17</h1>
+                <label>Дрожат ли у Вас руки даже после небольшой 
+                    выпивки ?</label>
+                <br>
+                <input type="radio" name="q17" value="1">Да
+                <input type="radio" name="q17" value="0">Нет
+                <br>
+                <h1>Вопрос 18</h1>
+                <label>Бывает ли, что Ваш запой длится 
+                    несколько дней ?</label>
+                <br>
+                <input type="radio" name="q18" value="1">Да
+                <input type="radio" name="q18" value="0">Нет
+                <br>
+                <h1>Вопрос 19</h1>
+                <label>Чувствуете ли Вы иногда
+                     депрессию и нежелание жить ?</label>
+                <br>
+                <input type="radio" name="q19" value="1">Да
+                <input type="radio" name="q1" value="0">Нет
+                <br>
+                <h1>Вопрос 20</h1>
+                <label>Бывают ли у Вас после пьянки 
+                    слуховые и зрительные галлюцинации ?</label>
+                <br>
+                <input type="radio" name="q20" value="1">Да
+                <input type="radio" name="q20" value="0">Нет
+                <br>
+
+                <button type="submit">Узнать результат</button>
+            </form>
+        </div>
+    </body>
+</html>

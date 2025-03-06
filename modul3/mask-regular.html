@@ -19,7 +19,7 @@
 <body style="font-size: 20px;">
     <table border="1">
         <tr>
-            <td class="name">Удаление всех HTML тегов</td>
+            <td class="name">Поиск всех HTML тегов</td>
             <td>$pattern = "/<[^>]+>/";</td>
         </tr>
         <tr>
@@ -27,16 +27,36 @@
             <td>$pattern = "/&ltb>(.*?)&lt\/b>/";</td>
         </tr>
         <tr>
-            <td class="name">Поиск всех ссылок</td>
-            <td>$pattern = "/&lta\s+href=['\"](.*?)['\"][^>]*>(.*?)<\/a>/";</td>
+            <td class="name">Поиск всех изображений</td>
+            <td>$pattern = "/&ltimg\s+src=['\"](.*?)['\"][^>]*>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех cсылок</td>
+            <td>$pattern = "/&lta\s+href=['\"](.*?)['\"][^>]*>/";</td>
         </tr>
         <tr>
             <td class="name">Поиск всех тегов &ltp>&lt/p></td>
             <td>$pattern = "/&ltp>(.*?)<\/p>/";</td>
         </tr>
         <tr>
+            <td class="name">Поиск всех тегов &ltul></td>
+            <td>$pattern = "/&ltul>(.*?)<\/ul>/";</td>
+        </tr>
+        <tr>
             <td class="name">Поиск всех тегов &lth1>&lt/h1></td>
             <td>$pattern = "/&lth1>(.*?)<\/h1>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех тегов &lth2>&lt/h2></td>
+            <td>$pattern = "/&lth2>(.*?)<\/h2>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех тегов &lth3>&lt/h3></td>
+            <td>$pattern = "/&lth3>(.*?)<\/h3>/";</td>
+        </tr>
+        <tr>
+            <td class="name">Поиск всех тегов &ltli>&lt/li></td>
+            <td>$pattern = "/&ltli>(.*?)<\/li>/";</td>
         </tr>
     </table>
 </body>

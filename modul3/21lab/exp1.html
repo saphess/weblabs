@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body {
+        font-family: Montserrat;
+        font-size: 24px;
+    }
+    button {
+        width: 200px;
+        height: 75px;
+        margin-left: 30%;
+        font-size: 24px;
+    }
+    input {
+        width: 400px;
+        height: 75px;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+</style>
+<body>
+    <form action="input.php" method="post" enctype="multipart/form-data">
+        <h1>Загрузить файл в папку</h1>
+        <input type="file" name="fileToUpload">
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
