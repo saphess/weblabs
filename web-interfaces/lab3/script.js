@@ -53,34 +53,38 @@ for (i = 45; i <= 670; i += 10) {
 
 // Задание 11
 console.log("Задание 11")
-n = 3;
+n = prompt("Выберите цифру от 0 до 9");
 switch (n) {
-    case 0:
-        console.log("zero");
+    case "0":
+        alert("zero");
         break;
-    case 1:
-        console.log("I");
+    case "1":
+        alert("I");
         break;
-    case 2:
-        console.log("II");
+    case "2":
+        alert("II");
         break;
-    case 3:
-        console.log("III");
+    case "3":
+        alert("III");
         break;
-    case 4:
-        console.log("IV");
+    case "4":
+        alert("IV");
         break;
-    case 5:
-        console.log("V");
+    case "5":
+        alert("V");
         break;
-    case 6:
-        console.log("VI");
+    case "6":
+        alert("VI");
         break;
-    case 7:
-        console.log("VII");
+    case "7":
+        alert("VII");
         break;
-    case 8:
-        console.log("VIII")
+    case "8":
+        alert("VIII");
+        break;
+    default:
+        alert("Нет такого варианта");
+        break;
 }
 
 // Задание 16
@@ -93,20 +97,23 @@ for (i = 0; i < 10; i++) {
 document.write("<br>");
 
 // Задание 17
-let size = 120;
-let unit = "Кб";
+let size = Number(prompt("Введите количество"));
+let unit = prompt("Введите размерность");
 console.log("Задание 17")
 switch (unit) {
     case "Кб":
         size *= 1024;
-        console.log(`Размер равен ${size} байт`);
+        alert(`Размер равен ${size} байт`);
         break;
     case "Мб":
         size *= 1024 * 1024;
-        console.log(`Размер равен ${size} байт`);
+        alert(`Размер равен ${size} байт`);
         break;
     case "Гб":
         size *= 1024 * 1024 * 1024;
-        console.log(`Размер равен ${size} байт`);
+        alert(`Размер равен ${size} байт`);
+        break;
+    default:
+        alert("Нет такого варианта");
         break;
 }
