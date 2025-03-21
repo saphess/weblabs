@@ -1,187 +1,220 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Лабораторная работа 1</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <div class="header">
-            <img src="layout/Image 37.png" alt>
-            <div class="info">
-                <span style="font-size: 40px;">+7(499)777-77-77</span>
-                <span style="font-size: 40px;">+7(499)777-77-77</span>
-                <span id="btn-modal" style="font-size: 24px; font-weight: bolder;"
-                    href="#">Обратная связь</span>
-            </div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Лабораторная работа 1</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img class="logo-img" src="img/logo.png" alt="">
         </div>
-        <div class="menu">
-            <p class="item_menu"><a>Главная</a> |</p>
-            <p class="item_menu"><a>Каталог</a> |</p>
-            <p class="item_menu"><a>Доставка и оплата</a> |</p>
-            <p class="item_menu"><a>Прайс-лист</a> |</p>
-            <p class="item_menu"><a>Контакты</a></p>
+        <div class="info">
+            <p class="phone-number">+7(499)777-77-77</p>
+            <p class="phone-number">+7(499)777-77-77</p>
+            <span id="btn-modal">Обратная связь</span>
         </div>
-        <div class="slider">
-            <img class="img-slider" src="layout/Image 9.png">
-            <img src="layout/Image 9.png" alt>
-            <img src="layout/Image 9.png" alt>
-
-            <button class="btn btn_left"><</button>
-            <button class="btn btn_right">></button>
+    </div>
+</header>
+<div class="nav-bar">
+    <nav>
+        <div><a href="#">Главная</a></div>
+        <div>|</div>
+        <div><a href="#">Каталог</a></div>
+        <div>|</div>
+        <div><a href="#">Доставка и оплата</a></div>
+        <div>|</div>
+        <div><a href="#">Прайс-лист</a></div>
+        <div>|</div>
+        <div><a href="#">Контакты</a></div>
+    </nav>
+</div>
+<div class="slider">
+    <img class="active-img-slider img-slider" src="img/1.png" alt="">
+    <img class="img-slider" src="img/2.png" alt="">
+    <img class="img-slider" src="" alt="слайд 2">
+    <img class="img-slider" src="" alt="слайд 3">
+    <img class="btn btn_left" src="img/btn-right.png"/>
+    <img class="btn btn_right" src="img/btn-image.png"/>
+</div>
+<div class="router">
+    <p><a href="">Главная</a> / <a href="">Каталог</a> / Бытовая техника</p>
+</div>
+<div class="main">
+    <div class="main__content main__content_left">
+        <p><a href="">Автомобили</a></p>
+        <p class="active-link"><a href="">Бытовая техника</a></p>
+        <p>
+        <ul>
+            <li class="active-li-item">Микроволновки</li>
+            <li>Холодильники</li>
+            <li>Посудомоечные машины</li>
+            <li>Чайники</li>
+        </ul>
+        </p>
+        <p><a href="">Мобильная техника</a></p>
+        <p><a href="">Компьютеры</a></p>
+        <p><a href="">Одежда</a></p>
+        <p><a href="">Недвижимость</a></p>
+        <div class="img-price">
+            <img src="img/logo-x.png" alt=""/>
+            <p class="img-price__text">Прайс-лист</p>
         </div>
-        <div class="router">
-            <p><a href="">Главная</a> / <a href="">Каталог</a> / Бытовая техника</p>
-        </div>
-        <div class="main">
-            <div class="nav">
-                <p><a href>Автомобили</a></p>
-                <p class="active-link"><a href>Бытовая техника</a></p>
-                <p>
-                    <ul>
-                        <li class="active-li-item">Микроволновки</li>
-                        <li>Холодильники</li>
-                        <li>Посудомоечные машины</li>
-                        <li>Чайники</li>
-                    </ul>
+    </div>
+    <div class="main__content main__content_right">
+        <div class="cards">
+            <div class="cards__item">
+                <img class="img-card" src="img/card-img.png" alt="">
+                <p class="card-text">
+                    Самый клевый чайник,<br>
+                    который надо купить!
                 </p>
-                <p><a href>Мобильная техника</a></p>
-                <p><a href>Компьютеры</a></p>
-                <p><a href>Одежда</a></p>
-                <p><a href>Недвижимость</a></p>
-                <div class="img-price">
-                    <img src="layout/Image 28.png" alt />
-                    <p class="img-price__text">Прайс-лист</p>
+                <div class="card-buy">
+                    <p class="cost">1900р.</p>
+                    <div><img src="img/cart-icon.png" alt=""></div>
                 </div>
             </div>
-            <div>
-                <div class="content">
-                    <div class="cards__item">
-                        <img class="img-card" src="layout/Image 14.png">
-                        <p class="card-text">
-                            Самый клевый чайник,<br>
-                            который надо купить!
-                        </p>
-                        <div class="card-buy">
-                            <p class="cost">1900р.</p>
-                            <div><img src="img/cart-icon.png" alt></div>
-                        </div>
-                    </div>
-    
-                    <div class="cards__item">
-                        <img class="img-card" src="layout/Image 14.png">
-                        <p class="card-text">
-                            Самый клевый чайник,<br>
-                            который надо купить!
-                        </p>
-                        <div class="card-buy">
-                            <p class="cost">1900р.</p>
-                            <div><img src="img/cart-icon.png" alt></div>
-                        </div>
-                    </div>
-    
-                    <div class="cards__item">
-                        <img class="img-card" src="layout/Image 14.png">
-                        <p class="card-text">
-                            Самый клевый чайник,<br>
-                            который надо купить!
-                        </p>
-                        <div class="card-buy">
-                            <p class="cost">1900р.</p>
-                            <div><img src="img/cart-icon.png" alt></div>
-                        </div>
-                    </div>
-    
-                    <div class="cards__item">
-                        <img class="img-card" src="layout/Image 14.png">
-                        <p class="card-text">
-                            Самый клевый чайник,<br>
-                            который надо купить!
-                        </p>
-                        <div class="card-buy">
-                            <p class="cost">1900р.</p>
-                            <div><img src="img/cart-icon.png" alt></div>
-                        </div>
-                    </div>
-    
-                    <div class="cards__item">
-                        <img class="img-card" src="layout/Image 14.png">
-                        <p class="card-text">
-                            Самый клевый чайник,<br>
-                            который надо купить!
-                        </p>
-                        <div class="card-buy">
-                            <p class="cost">1900р.</p>
-                            <div><img src="img/cart-icon.png" alt></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pages">
-                    <div>1</div>
-                    <div>2</div>
-                    <div class="active-page">3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
+            <div class="cards__item">
+                <img class="img-card" src="img/card-img.png" alt="">
+                <p class="card-text">
+                    Самый клевый чайник,<br>
+                    который надо купить!
+                </p>
+                <div class="card-buy">
+                    <p class="cost">1900р.</p>
+                    <div><img src="img/cart-icon.png" alt=""></div>
                 </div>
             </div>
-            
-            
-        </div>
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer__item">
-                    <p>©2012–2013ЗАО«Компания»</p>
-                    <p>info@name.ru</p>
+            <div class="cards__item">
+                <img class="img-card" src="img/card-img.png" alt="">
+                <p class="card-text">
+                    Самый клевый чайник,<br>
+                    который надо купить!
+                </p>
+                <div class="card-buy">
+                    <p class="cost">1900р.</p>
+                    <div><img src="img/cart-icon.png" alt=""></div>
                 </div>
-                <div class="footer__item footer__item-nav">
-                    <p><a href="">Главная</a></p>
-                    <p><a href="">Каталог</a></p>
-                    <p><a href="">Доставка и оплата</a></p>
-                    <p><a href="">Прайс-лист</a></p>
-                    <p><a href="">Контакты</a></p>
+            </div>
+            <div class="cards__item">
+                <img class="img-card" src="img/card-img.png" alt="">
+                <p class="card-text">
+                    Самый клевый чайник,<br>
+                    который надо купить!
+                </p>
+                <div class="card-buy">
+                    <p class="cost">1900р.</p>
+                    <div><img src="img/cart-icon.png" alt=""></div>
+                </div>
+            </div>
+            <div class="cards__item">
+                <img class="img-card" src="img/card-img.png" alt="">
+                <p class="card-text">
+                    Самый клевый чайник,<br>
+                    который надо купить!
+                </p>
+                <div class="card-buy">
+                    <p class="cost">1900р.</p>
+                    <div><img src="img/cart-icon.png" alt=""></div>
                 </div>
             </div>
         </div>
+        <div class="pages">
+            <div><a href="1">1</a></div>
+            <div><a href="2">2</a></div>
+            <div><a href="3" class="active">3</a></div>
+            <div><a href="4">4</a></div>
+            <div><a href="5">5</a></div>
+            <div><a href="6">6</a></div>
+            <div><a href="7">7</a></div>
+        </div>
+        <div class="separator"></div>
+        <div class="text-info">
+            <div class="text-info__content">
+                <p>Компания «Пиксель Плюс» существует более 6 лет, за это</p>
+                <p>время мы принимали участие в разработке более чем</p>
+                <p>700 сайтов,поэтому можем уверенно называть себя</p>
+                <p>профессионалами. Наданный момент наш коллектив</p>
+                <p>состоит из более чем 30 сотрудников работающих в двух</p>
+                <p>офисах в Москве и Зеленограде. характерные для этого</p>
+                <p>жанра мотивы: неразделённой любви,ухода молодости,</p>
+                <p>угасания души.</p>
+            </div>
+            <div class="text-info__content">
+                <p>Одним из основных направлений работ нашей компании</p>
+                <p>является поисковое продвижение сайтов,на данной</p>
+                <p>момент мы работаем с более чем 150 постоянными</p>
+                <p>клиентам и по более чем 11 000 поисковым запросам.</p>
+                <p>При этом в работе основной акцент мы делаем на</p>
+                <p>качестве работ, а так же применяем собственные</p>
+                <p>уникальные разработки в области SEO продвижения. На</p>
+                <p>данный момент отдел SEO состоит из 9 человек под</p>
+                <p>руководством ведущего специалиста, преимущественно</p>
+                <p>работающих в нашем московском офисе.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer__item">
+            <p>©2012–2013ЗАО«Компания»</p>
+            <p>info@name.ru</p>
+        </div>
+        <div class="footer__item footer__item-nav">
+            <p><a href="">Главная</a></p>
+            <p><a href="">Каталог</a></p>
+            <p><a href="">Доставка и оплата</a></p>
+            <p><a href="">Прайс-лист</a></p>
+            <p><a href="">Контакты</a></p>
+        </div>
+    </div>
+</footer>
+<div class="bg-modal" id="bg-modal">
 
-        <div class="bg-modal" id="bg-modal">
-
+</div>
+<div class="modal" id="modal">
+    <div class="title">
+        Обратная связь
+    </div>
+    <div class="btn-close-container">
+        <button id="btn-close"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49994 6.92999L14.4399 -0.0100098L15.0079 0.55999L8.06794 7.49999L15.0079 14.44L14.4399 15.01L7.49994 8.06999L0.559943 15.01L-0.00805664 14.44L6.93194 7.49999L-0.00805664 0.55999L0.559943 -0.0100098L7.49994 6.92999Z" fill="white"/>
+        </svg>
+        </button>
+    </div>
+    <div class="modal__content">
+        <div class="form__item">
+            <label>Имя *</label>
+            <input type="name">
         </div>
-        <div class="modal" id="modal">
-            <div class="title">
-                Обратная связь
-            </div>
-            <div class="btn-close-container">
-                <button id="btn-close">x</button>
-            </div>
-            <div class="modal__content">
-                <div class="form__item">
-                    <label>Имя *</label>
-                    <input type="name">
-                </div>
-                <div class="form__item">
-                    <label>Телефон *</label>
-                    <input type="tel">
-                </div>
-                <div class="form__item">
-                    <label>Email *</label>
-                    <input type="email">
-                </div>
-                <div class="form__item">
-                    <label>Сообщение</label>
-                    <textarea></textarea>
-                </div>
-                <div class="block__btn">
-                    <button class="btn-modal">ОТПРАВИТЬ</button>
-                </div>
-            </div>
+        <div class="form__item">
+            <label>Телефон *</label>
+            <input type="tel">
         </div>
+        <div class="form__item">
+            <label>Email *</label>
+            <input type="email">
+        </div>
+        <div class="form__item">
+            <label>Сообщение</label>
+            <textarea></textarea>
+        </div>
+        <div class="block__btn">
+            <button class="btn-modal">ОТПРАВИТЬ</button>
+        </div>
+    </div>
+</div>
 
-        <script src="script.js"></script>
-    </body>
+<script src="script.js"></script>
+</body>
 </html>
