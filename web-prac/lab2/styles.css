@@ -2,18 +2,31 @@
 
 body {
     font-family: Montserrat;
+    height: 1590px;
+    background-color: white;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .header {
     height: 80px;
     width: 100%;
     max-width: 2000px;
-    position:sticky;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     box-shadow: 15px 3px 18px gray,
-    -15px 3px 18px gray;
+        -15px 3px 18px gray;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background-color: white;
+    z-index: 100;
 }
 
 .header .logo {
@@ -23,19 +36,19 @@ body {
 .header .text {
     width: 116px;
     height: 41px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
 .header .menu {
     width: 900px;
     height: 18px;
     padding-left: 133px;
-    padding-top: 32px;
+    /* padding-top: 32px; */
     color: rgb(139, 157, 230);
     /* display: inline-flex; */
 }
 
-.header .menu a{
+.header .menu a {
     text-decoration: none;
     color: rgb(139, 157, 230);
     font-size: 17px;
@@ -44,4 +57,292 @@ body {
 
 .header .menu a:hover {
     color: black;
+}
+
+.main {
+    max-width: 1146px;
+    width: 100%;
+    height: auto;
+    padding-top: 98px;
+    margin: 0 auto;
+
+    flex-grow: 1
+        /* background-color: aqua; */
+}
+
+.path a {
+    text-decoration: none;
+    color: rgb(139, 157, 230);
+}
+
+.logo-search {
+    padding-top: 19px;
+    height: 175px;
+    align-items: center;
+    position: relative;
+}
+
+.background-text {
+    position: absolute;
+    font-size: 144px;
+    color: rgba(0, 0, 0, 0.1);
+    /* Светлый задний текст */
+    left: 0;
+}
+
+.foreground-text {
+    position: relative;
+    font-size: 34px;
+    top: 90px;
+    color: rgb(18, 40, 97);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-string {
+    display: flex;
+    width: 712px;
+    justify-content: space-between;
+}
+
+.search-field {
+    width: 489px;
+    height: 20px;
+
+    font-size: 18px;
+    padding: 10px;
+
+    font-family: Montserrat;
+
+    border: none;
+    border-bottom: 2px solid rgb(139, 157, 230);
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-button {
+    width: 224px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+
+    margin-left: 41px;
+
+    background-color: rgb(139, 157, 230);
+
+    font-family: Montserrat;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.search-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(139, 157, 230, 0.9);
+    /* Легкое свечение при наведении */
+}
+
+.quote {
+    display: flex;
+
+    width: 712px;
+    gap: 8px;
+}
+
+.quote .start-img {
+    left: 0;
+    margin-top: 5px;
+    width: 13px;
+    height: 12px;
+}
+
+.quote .text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: rgb(196, 196, 196);
+}
+
+.quote .end-img {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
+
+.search-results {
+    margin-top: 35px;
+    display: flex;
+    width: 712px;
+    flex-direction: column;
+}
+
+.number-result-found {
+    font-size: 20px;
+    font-weight: 250;
+    color: rgb(114, 115, 116);
+    margin-bottom: 13px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-results-path {
+    width: 100%;
+    color: rgb(114, 115, 116);
+    font-size: 16px;
+}
+
+.result a {
+    text-decoration: none;
+    color: rgb(139, 157, 230);
+    font-size: 20px;
+}
+
+.pages {
+    margin-top: 65px;
+    width: 712px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(139, 157, 230);
+
+    font-family: Montserrat;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.first-page {
+    background-color: white;
+    color: rgb(114, 115, 116);
+}
+
+.basement {
+    width: 100%;
+    height: 380px;
+    max-width: 1146px;
+
+    bottom: 0;
+    margin: 0 auto;
+
+    z-index: 1;
+
+    justify-items: center;
+}
+
+.basement-hight {
+    display: flex;
+    justify-items: center;
+
+    height: 200px;
+}
+
+.basement-logo {
+    width: 470px;
+    height: 120px;
+
+    padding-right: 130px;
+
+    display: flex;
+}
+
+.basement-logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.basement-name-company {
+    width: 200px;
+    padding-top: 10px;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(139, 157, 230);
+}
+
+.basement-logo-slogan {
+    padding-top: 7px;
+
+    font-size: 16px;
+    color: rgb(18, 40, 97);
+}
+
+.basement-menu {
+    width: 460px;
+
+    text-align: left;
+    display: flex;
+    gap: 40px;
+
+    font-weight: 250;
+    font-size: 18px;
+    color: rgb(139, 157, 230);
+}
+
+.basement-menu-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.basement-menu-element {
+    padding-bottom: 18px;
+}
+
+.basement-social {
+    width: 67px;
+    display: flex;
+    flex-direction: column;
+}
+
+.basement-hr {
+    border: none;
+    border-top: 1px solid rgb(139, 157, 230);
+    width: 100%;
+}
+
+.basement-low {
+    padding-top: 30px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start;
+
+    width: 100%;
+    max-width: 1146px;
+}
+
+.basement-copyright {
+    width: 157px;
+    height: 13px;
+
+    margin-right: 750px;
+}
+
+.basement-vector-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
